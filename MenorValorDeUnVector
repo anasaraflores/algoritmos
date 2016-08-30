@@ -1,0 +1,32 @@
+// BuscarNumeroMenor.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main()
+{ 
+	int vec[100], n, me, i;
+    cout<<" Ingrese tamaño del vector: "<<endl;
+    cin>>n;
+    for(i=0;i<n;i++)
+      { 
+		  cout<<" Ingrese los datos: "<<endl;
+	      cin>>vec[i];
+      }
+	 me=99999;
+	 for(i=0;i<n;i++)
+	    {
+			if(vec[i]<me)
+			  { 
+				  me= vec[i];
+			  }
+	    }
+	 cout<<" El numero menor es: "<<me<<endl;
+	 getch();
+
+}
